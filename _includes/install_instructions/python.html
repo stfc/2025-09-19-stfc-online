@@ -143,63 +143,20 @@ https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatib
           <li>
             Type <pre>bash Miniforge3-</pre> and then press <kbd>Tab</kbd> to autocomplete the full file name.
             The name of file you just downloaded should appear.
-            Press <kbd>Enter</kbd> (or <kbd>Return</kbd> depending on your keyboard).
+            Then type <pre>-b</pre>
+            and press <kbd>Enter</kbd> (or <kbd>Return</kbd> depending on your keyboard).
+            The command should look something like:
+            <pre>bash Miniforge3-&lt;Your-Linux-Version>.sh -b</pre>
           </li>
           <li>
-            Follow the text-only prompts in the terminal. To move through the text, press <kbd>Spacebar</kbd>.
-            <ul>
-              <li>Type <code>yes</code> and press <kbd>Enter</kbd> (or <kbd>Return</kbd>) to approve the license.</li>
-              <li>Press <kbd>Enter</kbd> (or <kbd>Return</kbd>) to approve the default location for the files.</li>
-              <li>Type <code>yes</code> and press <kbd>Enter</kbd> (or <kbd>Return</kbd>) to prepend Miniforge to your <code>PATH</code> (this makes the Miniforge distribution the default Python).</li>
-            </ul>
+            Type the command <pre>source ~/miniforge3/bin/activate</pre>
+            and press <kbd>Enter</kbd> to activate conda. You should see the <code>(base)</code> indicator in your terminal.
           </li>
-		  <li>Type <pre>. ~/.bashrc</pre> and press <kbd>Enter</kbd> to restart your current shell. You should see the <code>(base)</code> indicator in your terminal.
-          </li>
-          <li>Then:
-            <ul>
-              <li><strong>EITHER</strong>:
-                <ul>
-                  <li>Right click the following link and click "Save link as...": <a href="https://raw.githubusercontent.com/carpentries/workshop-template/refs/heads/gh-pages/data/carpentries_environment.yml">Carpentries environment file</a></li>
-                  <li>Save the file to your <code>Downloads</code> folder.</li>
-                  <li>Make sure that the filename is <code>carpentries_environment.yml</code> and the "Save as type" is set to <code>YML file (*.yml)</code></li>
-                </ul>
-              </li>
-              <li><strong>OR </strong>:
-                <ul>
-                  <li>Open your `bash` terminal</li>
-                  <li><code>cd ~/Downloads</code></li>
-                  <li><code>curl -L -O https://raw.githubusercontent.com/carpentries/workshop-template/refs/heads/gh-pages/data/carpentries_environment.yml</code></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-  	      <li>In the terminal, run: <code>conda env create -f ~/Downloads/carpentries_environment.yml</code></li>
-          <li>Close the terminal window.</li>
-        </ol>
-      </article>
-      <article role="tabpanel" class="tab-pane" id="python-linux">
-        <ol>
-          <li>Open <a href="https://conda-forge.org/download/">https://conda-forge.org/download/</a> with your web browser.</li>
-          <li>Download the appropriate Miniforge installer for Linux<br>
-	          <em>The following steps require using the shell. If you aren't comfortable doing the installation yourself stop here and request help at the workshop</em>.
-	      </li>
+          <br>
           <li>
-            Open a terminal window and navigate to the directory where the executable is downloaded (e.g., <code>cd ~/Downloads</code>).
+            Finally, type <pre>conda init bash</pre> and press <kbd>Enter</kbd> to prepend Miniforge to your <code>PATH</code> (this makes the Miniforge distribution the default Python).
           </li>
-          <li>
-            Type <pre>bash Miniforge3-</pre> and then press <kbd>Tab</kbd> to autocomplete the full file name.
-            The name of file you just downloaded should appear.
-            Press <kbd>Enter</kbd> (or <kbd>Return</kbd> depending on your keyboard).
-          </li>
-          <li>
-            Follow the text-only prompts in the terminal.
-            To move through the text, press <kbd>Spacebar</kbd>.
-            <ul>
-              <li>Type <code>yes</code> and press <kbd>Enter</kbd> (or <kbd>Return</kbd>) to approve the license.</li>
-              <li>Press <kbd>Enter</kbd> (or <kbd>Return</kbd>) to approve the default location for the files.</li>
-              <li>Type <code>yes</code> and press <kbd>Enter</kbd> (or <kbd>Return</kbd>) to prepend Miniforge to your <code>PATH</code> (this makes the Miniforge distribution the default Python).</li>
-            </ul>
-          </li>
+          <br>
           <li>Then:
             <ul>
               <li><strong>EITHER</strong>:
